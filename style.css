@@ -149,10 +149,11 @@ h1 {
 }
 
 #about {
-   background-image: url(about.gif);
+   background-image: url(about-2.gif);
     background-color: whitesmoke;
     background-size: cover;
-    width: 100%;
+    background-position: center;
+   width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
