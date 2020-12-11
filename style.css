@@ -13,6 +13,7 @@ html, body {
     text-align: left;
     padding-left: 1rem;
     }
+
 a {
     text-decoration: none;
 
@@ -24,10 +25,9 @@ a {
     top: 0px;
     left: 0px;
     width: 100%;
-    background-color:  rgba(255,255,255,.8);;
     align-items: center;
     z-index: top;
-    background-color:whitesmoke; 
+    background-color:ge; 
     min-width: 1200px;
 }
 
@@ -47,7 +47,7 @@ img {
 }
 .logo img{
     display: block;
-    max-height: 80px;
+    max-height: 50px;
    margin: 0;
     padding: 0;
 }
@@ -100,16 +100,15 @@ img {
 }
 
 #hello {
-    background-image: url(photo_2020-09-25_10-07-26.jpg);
+    background-image: url(mainpage.png);
     background-color: whitesmoke;
     background-position: left;
-    background-size: 550px;
+    background-size: contain;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-   min-width: 1200px;
     min-height: 100vh;
 }
 div {
@@ -118,15 +117,15 @@ div {
 
 h1 {
     display: block;
-    margin-block-start: 0.6em;
-    margin-block-end: 0.6em;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
 
 }
 
 #hello h1 {
-   font-family: 'Raleway', sans-serif;
-   font-size: 22vh;
-    font-weight: 800;
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 18vh;
+    font-weight: 700;
     color: #000;
     text-align: right;
     line-height: 0;
@@ -139,9 +138,9 @@ h1 {
 
 
 #hello p {
-    font-family: 'Raleway', sans-serif;
+     font-family: 'Josefin Sans', sans-serif;
    font-size: 7vh;
-    font-weight: 400;
+    font-weight: 300;
     color: #000;
      text-align: right;
      line-height: 0;
@@ -150,46 +149,55 @@ h1 {
 }
 
 #about {
-   
+   background-image: url(second.png);
     background-color: whitesmoke;
+    background-size: contain;
     width: 100%;
     min-height: 100vh;
-  
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-
 .text h2 {
-
+    margin-right: 27em;
+    margin-left: 6em;
    font-family: 'Raleway', sans-serif;
    font-size: 5vh;
     font-weight: 600;
     color: #000;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
-     min-width: 1200px;
+}
+.text h2:hover {
+  box-shadow:
+    1px 1px orangered,
+    2px 2px orangered,
+    3px 3px orangered,
+    4px 4px orangered,
+    5px 5px orangered,
+    6px 6px orangered,
+    7px 7px orangered;
+  -webkit-transform: translateX(-7px);
+  transform: translateX(-7px);
 }
 
 
 .text p {
-    margin-right: 200px;
-    margin-left: 200px;
+    margin-right: 16em;
+    margin-left: 10em;
     font-family: 'Raleway', sans-serif;
    font-size: 3vh;
     font-weight: 200;
     color: #000;
-     text-align: center;
-     min-width: 1200px;
+     text-align: left;
+   
     
 }
-
-.text{
-    min-height: 100vh;
-    max-height: 100vh;
-     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#works{
+    background-color: whitesmoke;
 }
 
 .gallery {
@@ -207,42 +215,53 @@ h1 {
 
 
 #works h3 {
+    margin-right: 27em;
+    margin-left: 6em;
     font-family: 'Raleway', sans-serif;
    font-size: 5vh;
     font-weight: 600;
     color: #000;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
-     min-width: 1200px;
     margin-top: 80px;
     margin-bottom: 50px;
 }
 
-#info {
-    height: 20%;
-}
 
-.social-icons li {
-   display: inline-grid;
-      padding: 1px 11rem;
-    line-height: 2em;
-   grid-template-columns:  3fr;
-    
-  
-}
-.social-icons img {
-    max-height: 70px;
+
+#info {
+    background-image: url(contact.gif);
+    background-color: whitesmoke;
+     background-size: cover;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+     min-height: 10vh;
    
 }
 
+.social-icons {
+     display: grid;
+  grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); 
+     grid-gap: 1em;
+   margin-left: 16em;
+    
+}
+.social-icons img {
+    max-height: 70px;
+
+}
+
 h4{
+ 
+    margin-left: 6em;
     font-family: 'Raleway', sans-serif;
    font-size: 5vh;
     font-weight: 600;
     color: #000;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
      min-width: 1200px;
-   margin-top: 100px;
-    margin-bottom: 200px;
+   
+    
   }

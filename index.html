@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Моя GRID сторінка</title>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,900&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+   
     <link rel="stylesheet" href="style.css">
+    
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="dist/css/lightgallery.css">
     
 </head>
 
@@ -16,9 +20,9 @@
 
  <div class="navbar">
         <div class="logo">
-         <img src="%D0%A0%D0%B5%D1%81%D1%83%D1%80%D1%81%201.png">
-        </div>
-                
+         <img src="logo.png">
+       
+           </div>     
 
   <ul class="menu">
             <li class="active"><a href="#hello">Привіт</a></li>
@@ -39,12 +43,12 @@
          <div class="section" id="about">
          
         <div class="text">
-         <h2> Про себе</h2>
+         <h2>Про себе</h2>
      <p>Студентка Львівської національної академії мистецтв, сама родом з чудового міста Чернівці. 19 років.
-        Хоббі очевидне: робити все, що пов'язане з творчістю.
-          Також активно веду соц.мережі та люблю фотографувати. Якщо ілюстрація - переважно дівчина, а якщо живопис, то в реалізмі.
+       <p> Хоббі очевидне: робити все, що пов'язане з творчістю.
+          Також активно веду соц.мережі та люблю фотографувати.</p> <p> Якщо ілюстрація - переважно дівчина, а якщо живопис, то в реалізмі.
           Минулого семестру академія відкрила в мені нову пристрасть - анімацію, тому синці під очима стали все більше і здається я за декілька місяців того курсу постаріла. Жарти жартами, але дякую ЛНАМ за те, що відкриває в мені нові грані.
-          </p>
+          <p>
           </div>
           
  </div>
@@ -54,36 +58,49 @@
        <div class="section" id="works">
            <h3>Портфоліо</h3>
            
-           <div class="gallery">
-  <div class="item1"><img src="IMG_1604.JPG"></div>
-  <div class="item2"><img src="IMG_7585.JPG"></div>
-  <div class="item3"><img src="IMG_9114.JPG"></div>
-  <div class="item4"><img src="IMG_9879.JPG"></div>
-  <div class="item5"><img src="IMG_1546.JPG"></div>
-  <div class="item6"><img src="IMG_9720.JPG"></div>
-  <div class="item7"><img src="IMG_9687.JPG"></div>
-  <div class="item8"><img src="IMG_9683.JPG"></div>
+           <div class="gallery" id="lightgallery">
+  <div class="item"><a href="IMG_1604.JPG"><img src="IMG_1604.JPG"></a></div>
+  
+  <div class="item"><a href="IMG_7585.JPG"><img src="IMG_7585.JPG"></a></div>
+  
+  <div class="item"><a href="IMG_9114.JPG"><img src="IMG_9114.JPG"></a></div>
+  
+  <div class="item"><a href="IMG_9879.JPG"><img src="IMG_9879.JPG"></a></div>
+  
+  <div class="item"><a href="IMG_1546.JPG"><img src="IMG_1546.JPG"></a></div>
+  
+  <div class="item"><a href="IMG_9720.JPG"><img src="IMG_9720.JPG"></a></div>
+  
+  <div class="item"><a href="IMG_9687.JPG"><img src="IMG_9687.JPG"></a></div>
+  
+  <div class="item"><a href="IMG_9683.JPG"><img src="IMG_9683.JPG"></a></div>
  
 </div>
        </div> 
        
-          
+          <script src="dist/js/lightgallery.min.js">
+    </script>
+           <script>
+        lightGallery(document.getElementById('lightgallery'), {
+            selector: 'a'
+        });
+    </script>
+    
         
         <div class="section" id="info">
            <h4>Контакти</h4> 
                 <div class="social-icons">
-                    <li><a href="https://www.facebook.com/profile.php?id=100006504784462" target="_blank"><img src="20673.png"></a></li>
+                    <div><a href="https://www.facebook.com/profile.php?id=100006504784462" target="_blank"><img src="20673.png"></a></div>
                     
-                    <li><a href="https://www.pinterest.com/anna_ktsr/_saved/" target="_blank">
+                    <div><a href="https://www.pinterest.com/anna_ktsr/_saved/" target="_blank">
                     <img src="1024px-Pinterest_font_awesome.svg.png">
-                    </a></li>
+                    </a></div>
                     
-                    <li><a href="https://www.instagram.com/anna.ktsr/?hl=ru" target="_blank">
-                    <img src="639b3dafb544d6f061fcddd2d6686ddb.png"></a></li>
+                    <div><a href="https://www.instagram.com/anna.ktsr/?hl=ru" target="_blank">
+                    <img src="639b3dafb544d6f061fcddd2d6686ddb.png"></a></div>
                     
                 </div>
-          
-        
+  
 
          
          </div>
