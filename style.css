@@ -87,7 +87,7 @@ img {
     max-width: 100%;
     max-height: 100%;
     padding: 40px;
-    min-width: 1200px;
+    
    
 }
 .menu > li {
@@ -149,9 +149,9 @@ h1 {
 }
 
 #about {
-   background-image: url(second.png);
+   background-image: url(about.gif);
     background-color: whitesmoke;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
     min-height: 100vh;
     display: flex;
