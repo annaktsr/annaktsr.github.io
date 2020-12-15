@@ -28,7 +28,7 @@ a {
     align-items: center;
     z-index: top;
     background-color:ge; 
-    min-width: 1200px;
+
 }
 
 
@@ -87,6 +87,7 @@ img {
     max-width: 100%;
     max-height: 100%;
     padding: 40px;
+    
     
    
 }
@@ -151,20 +152,17 @@ h1 {
 #about {
    background-image: url(about-2.gif);
     background-color: whitesmoke;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
-   width: 100%;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
     
 }
 
 .text h2 {
-    margin-right: 27em;
-    margin-left: 6em;
+    
+    margin-left: 2em;
    font-family: 'Raleway', sans-serif;
    font-size: 5vh;
     font-weight: 600;
@@ -172,29 +170,25 @@ h1 {
     text-align: left;
     text-transform: uppercase;
 }
-.text h2:hover {
-  box-shadow:
-    1px 1px orangered,
-    2px 2px orangered,
-    3px 3px orangered,
-    4px 4px orangered,
-    5px 5px orangered,
-    6px 6px orangered,
-    7px 7px orangered;
-  -webkit-transform: translateX(-7px);
-  transform: translateX(-7px);
-}
+
 
 
 .text p {
-    margin-right: 16em;
-    margin-left: 10em;
+   
+    margin-left:3.3em;
     font-family: 'Raleway', sans-serif;
    font-size: 3vh;
     font-weight: 200;
     color: #000;
      text-align: left;
    
+    
+}
+.image img {
+     margin-left: 7em;
+     flex-direction: row;
+    max-height:500px;
+    
     
 }
 #works{
@@ -204,7 +198,7 @@ h1 {
 .gallery {
     
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 1em;
 
 }
@@ -231,38 +225,38 @@ h1 {
 
 
 #info {
-    background-image: url(contact.gif);
+    background-image: url(contacts.png);
     background-color: whitesmoke;
      background-size: cover;
     display: grid;
-    justify-content: center;
-    align-content: center;
-     min-height: 10vh;
+  
+     
    
 }
 
 .social-icons {
      display: grid;
-  grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); 
-     grid-gap: 1em;
-   margin-left: 16em;
-    
+  grid-template-columns:repeat(3, 1fr); 
+  
+     grid-gap: 7em;
+   margin-left:14em;
+    margin-bottom: 11em;
 }
 .social-icons img {
-    max-height: 70px;
+    max-height: 50px;
 
 }
 
 h4{
- 
-    margin-left: 6em;
     font-family: 'Raleway', sans-serif;
    font-size: 5vh;
     font-weight: 600;
     color: #000;
     text-align: left;
+    margin-left: 6em;
     text-transform: uppercase;
-     min-width: 1200px;
+    
+ 
    
     
   }
